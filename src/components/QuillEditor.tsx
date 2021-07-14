@@ -5,7 +5,11 @@ import { uploadImage } from "@services/image";
 import { useDropzone } from "react-dropzone";
 // @ts-ignore
 import ImageResize from "quill-image-resize";
+import "./edtior.css";
 
+const Font = Quill.import("formats/font"); // <<<< ReactQuill exports it
+Font.whitelist = ["NotoSans", "Jua", "Roboto", "Montserrat"];
+Quill.register(Font, true);
 Quill.register("modules/ImageResize", ImageResize);
 
 const QuilEditor = ({
@@ -47,7 +51,7 @@ const QuilEditor = ({
     },
     toolbar: {
       container: [
-        [{ header: "1" }, { header: "2" }, { font: [] }],
+        [{ header: "1" }, { header: "2" }, { font: Font.whitelist }],
         [{ size: [] }],
         ["bold", "italic", "underline", "strike", "blockquote", "code-block"],
         [
@@ -70,6 +74,7 @@ const QuilEditor = ({
     "header",
     "bold",
     "size",
+    "font",
     "italic",
     "underline",
     "strike",

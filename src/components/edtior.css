@@ -1,0 +1,47 @@
+.ql-picker.ql-font .ql-picker-label[data-value="NotoSans"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="NotoSans"]::before {
+  font-family: "Noto Sans KR", cursive;
+  content: "Noto Sans KR" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Jua"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Jua"]::before {
+  font-family: "Jua", cursive;
+  content: "Jua" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Roboto"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Roboto"]::before {
+  font-family: "Roboto", cursive;
+  content: "Roboto" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Montserrat"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Montserrat"]::before {
+  font-family: "Montserrat", cursive;
+  content: "Montserrat" !important;
+}
+
+.ql-picker-label {
+  font-size: 12px;
+}
+/* Default */
+.ql-editor {
+  font-family: "Noto Sans KR";
+}
+
+/* Set content font-families */
+.ql-font-NotoSans {
+  font-family: "Noto Sans KR";
+}
+
+.ql-font-Jua {
+  font-family: "Jua";
+}
+
+.ql-font-Roboto {
+  font-family: "Roboto";
+}
+.ql-font-Montserrat {
+  font-family: "Montserrat";
+}

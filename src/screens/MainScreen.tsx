@@ -15,7 +15,6 @@ import {
   ModalOverlay,
   ModalContent,
   ModalBody,
-  ModalCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
 import QuilEditor from "@components/QuillEditor";
@@ -35,12 +34,10 @@ const MainScreen = () => {
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent>
-          <ModalCloseButton />
           <ModalBody>{value}</ModalBody>
         </ModalContent>
       </Modal>
       <Container maxW="4xl" py={4} px={2}>
-        <Heading mb={4}>에디터</Heading>
         <Tabs colorScheme="black">
           <TabList>
             <Tab>작성</Tab>
