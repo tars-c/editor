@@ -1,15 +1,8 @@
 import axios from "axios";
 
-const uploadImage = async (
-  image: any,
-  size: number = 400,
-  format: string = "jpeg"
-) => {
+const uploadImage = async (image: any) => {
   try {
-    const { data } = await axios.post(
-      `fileupload?size=${size}&format=${format}`,
-      image
-    );
+    const { data } = await axios.post("fileupload", image);
     return data;
   } catch (err) {
     console.log(err.response.data);
